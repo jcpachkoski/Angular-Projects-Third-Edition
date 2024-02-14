@@ -79,6 +79,9 @@
             },
             "development": {
               "browserTarget": "issue-tracker:build:development"
+            },
+            "staging": {
+              "browserTarget": "issue-tracker:build:staging"
             }
           },
           "defaultConfiguration": "development"
