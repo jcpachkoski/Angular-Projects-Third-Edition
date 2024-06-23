@@ -32,6 +32,12 @@
           },
           "configurations": {
             "production": {
+              "fileReplacements": [
+              {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
               "budgets": [
                 {
                   "type": "initial",
@@ -44,21 +50,14 @@
                   "maximumError": "4kb"
                 }
               ],
+              "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": true,
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true,
-              "optimization": {
-                "scripts": true,
-                "fonts": true,
-                "styles": {
-                  "minify": true,
-                  "inlineCritical": true
-                }
-              }
+              "buildOptimizer": true
             },
             "development": {
               "buildOptimizer": false,
@@ -66,13 +65,7 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true,
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.development.ts"
-                }
-              ]
+              "namedChunks": true
             },
             "staging": {
               "fileReplacements": [

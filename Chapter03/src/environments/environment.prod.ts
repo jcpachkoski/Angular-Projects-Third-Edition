@@ -1,5 +1,5 @@
 export const environment = {
-  production: false,
-  name:'staging environment',
+  production: true,
+  name:'production environment',
   // baseUrl: '/api',
 };
