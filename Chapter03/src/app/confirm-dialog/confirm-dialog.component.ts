@@ -13,10 +13,9 @@ export class ConfirmDialogComponent {
     this.confirm.emit(true);
     this.issueNo = null;
   }
-  
+
   disagree() {
     this.confirm.emit(false);
     this.issueNo = null;
   }
-  
 }
