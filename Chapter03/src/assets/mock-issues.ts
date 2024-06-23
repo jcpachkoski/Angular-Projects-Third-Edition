@@ -36,4 +36,18 @@ export const issues: Issue[] = [
     priority: 'high',
     type: 'Documentation'
   },
+  {
+    issueNo: 6,
+    title:  'Add edit detail page',
+    description: 'Create an edit detail page',
+    priority: 'high',
+    type: 'Feature'
+  },
+  {
+    issueNo: 7,
+    title:  'Add refresh after change filter',
+    description: 'Add code to refresh after change filter',
+    priority: 'high',
+    type: 'Bug'
+  },
 ];
