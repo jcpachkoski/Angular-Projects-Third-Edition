@@ -2,13 +2,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Issue } from '../issue';
 import { IssuesService } from '../issues.service';
-
-interface IssueForm {
-  title: FormControl<string>;
-  description: FormControl<string>;
-  priority: FormControl<string>;
-  type: FormControl<string>;
-}
+import { IssueForm } from '../issue-form';
 
 @Component({
   selector: 'app-issue-report',
