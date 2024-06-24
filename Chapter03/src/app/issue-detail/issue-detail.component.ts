@@ -1,6 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-
 import { Issue } from '../issue';
 import { IssueForm } from '../issue-form';
 import { IssuesService } from '../issues.service';
@@ -24,6 +23,7 @@ export class IssueDetailComponent implements OnInit {
         title: new FormControl(this.issue.title, { nonNullable: true, validators: Validators.required }),
         description: new FormControl(this.issue.description, { nonNullable: true }),
         priority: new FormControl(this.issue.priority, { nonNullable: true, validators: Validators.required }),
+        type: new FormControl(this.issue.type, { nonNullable: true, validators: Validators.required })
       });
     }
   }

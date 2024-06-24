@@ -21,6 +21,15 @@
     </clr-radio-wrapper>
     <clr-control-error>Priority is required</clr-control-error>
   </clr-radio-container>
+  <clr-select-container>
+    <label for="type">Type</label>
+    <select clrSelect formControlName="type" id="type">
+      <option value="Feature">Feature</option>
+      <option value="Bug">Bug</option>
+      <option value="Documentation">Documentation</option>
+    </select>
+    <clr-control-error>Type is required</clr-control-error>
+  </clr-select-container>
   <button class="btn btn-primary" type="submit">Save</button>
   <button class="btn" (click)="formClose.emit()">Cancel</button>
 </form>
