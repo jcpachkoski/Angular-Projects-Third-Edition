@@ -7,6 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "build-dev": "ng build --configuration development",
+    "build-prod": "ng build --configuration production",
     "scully": "scully",
     "scully:serve": "scully serve"
   },
