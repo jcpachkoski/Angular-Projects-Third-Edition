@@ -4,12 +4,12 @@ import {ActivatedRoute, Router, ROUTES} from '@angular/router';
 declare var ng: any;
 
 @Component({
-  selector: 'app-posts',
-  templateUrl: './posts.component.html',
-  styleUrls: ['./posts.component.scss'],
-  preserveWhitespaces: true,
-  encapsulation: ViewEncapsulation.Emulated
-
+    selector: 'app-posts',
+    templateUrl: './posts.component.html',
+    styleUrls: ['./posts.component.scss'],
+    preserveWhitespaces: true,
+    encapsulation: ViewEncapsulation.Emulated,
+    standalone: false
 })
 export class PostsComponent implements OnInit {
   ngOnInit() {}

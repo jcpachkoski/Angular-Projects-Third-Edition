@@ -3,9 +3,10 @@ import { ScullyRoute, ScullyRoutesService } from '@scullyio/ng-lib';
 import { Observable, map } from 'rxjs';
 
 @Component({
-  selector: 'app-articles',
-  templateUrl: './articles.component.html',
-  styleUrls: ['./articles.component.scss']
+    selector: 'app-articles',
+    templateUrl: './articles.component.html',
+    styleUrls: ['./articles.component.scss'],
+    standalone: false
 })
 export class ArticlesComponent implements OnInit {
   posts$: Observable<ScullyRoute[]> | undefined;
