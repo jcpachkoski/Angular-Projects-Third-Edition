@@ -5,7 +5,13 @@ import {PostsRoutingModule} from './posts-routing.module';
 import {PostsComponent} from './posts.component';
 
 @NgModule({
-  declarations: [PostsComponent],
-  imports: [CommonModule, PostsRoutingModule, ScullyLibModule],
+  declarations: [
+    PostsComponent
+  ],
+  imports: [
+    CommonModule,
+    PostsRoutingModule,
+    ScullyLibModule
+  ]
 })
 export class PostsModule {}

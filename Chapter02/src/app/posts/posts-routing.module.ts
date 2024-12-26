@@ -3,14 +3,8 @@ import {Routes, RouterModule} from '@angular/router';
 import {PostsComponent} from './posts.component';
 
 const routes: Routes = [
-  {
-    path: ':id',
-    component: PostsComponent,
-  },
-  {
-    path: '**',
-    component: PostsComponent,
-  }
+  { path: ':id', component: PostsComponent },
+  { path: '**', component: PostsComponent }
 ];
 
 @NgModule({
@@ -18,4 +12,3 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class PostsRoutingModule {}
-
